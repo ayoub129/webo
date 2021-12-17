@@ -3,7 +3,6 @@ import Footer from "../component/Footer";
 import Navbar from "../component/Navbar";
 import Projects from "../component/Projects";
 import Craft from "../component/Craft";
-import Testimonials from "../component/Testimonials";
 import Hero2 from "../component/Hero2";
 import Social from "../component/Social";
 
