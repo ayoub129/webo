@@ -8,14 +8,8 @@ const Hero2 = (props) => {
     AOS.refresh();
   }, []);
 
-  let classN = "";
-
-  if (props.homeLanguage === "ar") {
-    classN = "rtl";
-  }
-
   return (
-    <div className={`bg-violet ${classN} `}>
+    <div className="bg-violet">
       <div className="container my-5 p-5">
         <section className="d-lg-flex align-items-center justify-content-between">
           <div

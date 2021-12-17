@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const Tech = ({ homeLanguage }) => {
+const Tech = () => {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -11,10 +11,14 @@ const Tech = ({ homeLanguage }) => {
   return (
     <section>
       <h2 className="text-center fs-1 fw-bold">
-        MASTERED <span className="text-violet">TECHNOLOGIES</span>
+        DES <span className="text-violet">TECHNOLOGIES </span> MAÎTRISÉES
       </h2>
       <div className="row mt-5 align-items-center">
-        <div className="col-4 mt-5" data-aos="fade-down" data-aos-delay="200">
+        <div
+          className="col-12 col-md-6 col-lg-4 mt-5"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
           <div class="card  border-0 text-white">
             <img
               src="images/node.svg"
@@ -26,12 +30,17 @@ const Tech = ({ homeLanguage }) => {
                 <a href="https://nodejs.org/en/" className="text-violet">
                   Node.js®
                 </a>{" "}
-                is a JavaScript runtime built on Chrome’s V8 JavaScript engine.
+                est un environnement d'exécution JavaScript basé sur le moteur
+                JavaScript V8 de Chrome.
               </p>
             </div>
           </div>
         </div>
-        <div className="col-4 mt-5" data-aos="fade-down" data-aos-delay="400">
+        <div
+          className="col-12 col-md-6 col-lg-4 mt-5"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
           <div class="card  border-0 text-white">
             <img src="images/php.svg" class="card-img p-5 h-100 " alt="php" />
             <div class="card-img-overlay tech d-flex align-items-center justify-content-center ">
@@ -39,13 +48,17 @@ const Tech = ({ homeLanguage }) => {
                 <a href="https://www.php.net/" className="text-violet">
                   PHP
                 </a>{" "}
-                is a popular general-purpose scripting language that is
-                especially suited to web development.
+                est un langage de script généraliste populaire particulièrement
+                adapté au développement Web.
               </p>
             </div>
           </div>
         </div>
-        <div className="col-4 mt-5" data-aos="fade-down" data-aos-delay="600">
+        <div
+          className="col-12 col-md-6 col-lg-4 mt-5"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
           <div class="card  border-0 text-white">
             <img
               src="images/python.svg"
@@ -57,13 +70,17 @@ const Tech = ({ homeLanguage }) => {
                 <a href="https://www.python.org/" className="text-violet">
                   Python
                 </a>{" "}
-                is an interpreted, object-oriented, high-level programming
-                language with dynamic semantics.
+                est une programmation interprétée, orientée objet et de haut
+                niveau langage à sémantique dynamique.
               </p>
             </div>
           </div>
         </div>
-        <div className="col-4 mt-5" data-aos="fade-down" data-aos-delay="800">
+        <div
+          className="col-12 col-md-6 col-lg-4 mt-5"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
           <div class="card  border-0 text-white">
             <img
               src="images/vue.svg"
@@ -75,13 +92,18 @@ const Tech = ({ homeLanguage }) => {
                 <a href="https://vuejs.org/" className="text-violet">
                   Vue.js
                 </a>{" "}
-                is an open-source Model–view–viewmodel JavaScript framework for
-                building user interfaces and single-page applications.
+                est un framework JavaScript modèle-vue-vue modèle open source
+                pour création d'interfaces utilisateur et d'applications d'une
+                seule page.
               </p>
             </div>
           </div>
         </div>
-        <div className="col-4 mt-5" data-aos="fade-down" data-aos-delay="1000">
+        <div
+          className="col-12 col-md-6 col-lg-4 mt-5"
+          data-aos="fade-down"
+          data-aos-duration="10000"
+        >
           <div class="card  border-0 text-white">
             <img src="images/es.svg" class="card-img p-5 h-100 " alt="ES6.js" />
             <div class="card-img-overlay tech d-flex align-items-center justify-content-center ">
@@ -92,13 +114,18 @@ const Tech = ({ homeLanguage }) => {
                 >
                   ECMAScript
                 </a>{" "}
-                is a standardized version of JavaScript. ECMAScript 2015 (called
-                ES6) added a lot of new features to JavaScript.
+                est une version standardisée de JavaScript. ECMAScript 2015
+                (appelé ES6) a ajouté de nombreuses nouvelles fonctionnalités à
+                JavaScript.
               </p>
             </div>
           </div>
         </div>
-        <div className="col-4 mt-5" data-aos="fade-down" data-aos-delay="1200">
+        <div
+          className="col-12 col-md-6 col-lg-4 mt-5"
+          data-aos="fade-down"
+          data-aos-duration="10000"
+        >
           {" "}
           <div class="card  border-0 text-white">
             <img
@@ -111,12 +138,17 @@ const Tech = ({ homeLanguage }) => {
                 <a href="https://reactjs.org/" className="text-violet">
                   React
                 </a>{" "}
-                is a JavaScript library for building user interfaces.
+                est une bibliothèque JavaScript pour la création d'interfaces
+                utilisateur.
               </p>
             </div>
           </div>
         </div>
-        <div className="col-4 mt-5" data-aos="fade-down" data-aos-delay="1400">
+        <div
+          className="col-12 col-md-6 col-lg-4 mt-5"
+          data-aos="fade-down"
+          data-aos-duration="10000"
+        >
           <div class="card  border-0 text-white">
             <img
               src="images/wordpress.svg"
@@ -128,12 +160,16 @@ const Tech = ({ homeLanguage }) => {
                 <a href="https://wordpress.org/" className="text-violet">
                   Wordpress
                 </a>{" "}
-                is a content management system based on PHP.
+                est un système de gestion de contenu basé sur PHP.
               </p>
             </div>
           </div>
         </div>
-        <div className="col-4 mt-5" data-aos="fade-down" data-aos-delay="1600">
+        <div
+          className="col-12 col-md-6 col-lg-4 mt-5"
+          data-aos="fade-down"
+          data-aos-duration="10000"
+        >
           <div class="card  border-0 text-white">
             <img
               src="images/bigcommerce.svg"
@@ -145,12 +181,17 @@ const Tech = ({ homeLanguage }) => {
                 <a href="https://www.bigcommerce.com/" className="text-violet">
                   BigCommerce
                 </a>{" "}
-                is a Software-as-a-service e-commerce platform.
+                est une plate-forme de commerce électronique en tant que
+                service.
               </p>
             </div>
           </div>
         </div>
-        <div className="col-4 mt-5" data-aos="fade-down" data-aos-delay="1800">
+        <div
+          className="col-12 col-md-6 col-lg-4 mt-5"
+          data-aos="fade-down"
+          data-aos-duration="10000"
+        >
           <div class="card  border-0 text-white">
             <img
               src="images/shopify.svg"
@@ -162,12 +203,17 @@ const Tech = ({ homeLanguage }) => {
                 <a href="https://www.shopify.com/" className="text-violet">
                   Shopify
                 </a>{" "}
-                is an e-commerce platform for online stores.
+                est une plate-forme de commerce électronique pour les magasins
+                en ligne.
               </p>
             </div>
           </div>
         </div>
-        <div className="col-4 mt-5" data-aos="fade-down" data-aos-delay="2000">
+        <div
+          className="col-12 col-md-6 col-lg-4 mt-5"
+          data-aos="fade-down"
+          data-aos-duration="10000"
+        >
           <div class="card  border-0 text-white">
             <img
               src="images/figma.svg"
@@ -179,24 +225,32 @@ const Tech = ({ homeLanguage }) => {
                 <a href="https://www.figma.com/" className="text-violet">
                   Figma
                 </a>{" "}
-                is a collaborative interface design tool.
+                est un outil de conception d'interface collaborative.
               </p>
             </div>
           </div>
         </div>
-        <div className="col-4 mt-5" data-aos="fade-down" data-aos-delay="2200">
+        <div
+          className="col-12 col-md-6 col-lg-4 mt-5"
+          data-aos="fade-down"
+          data-aos-duration="10000"
+        >
           <div class="card  border-0 text-white">
             <img src="images/pwa.svg" class="card-img p-5 h-100 " alt="PWA" />
             <div class="card-img-overlay tech d-flex align-items-center justify-content-center ">
               <p class="card-text fw-bold w-50  text-center">
-                <span className="text-violet">PWA</span> are a type of
-                application software delivered through the web, built using
-                common web technologies including HTML, CSS and JavaScript.
+                <span className="text-violet">PWA</span> sont un type de
+                logiciel d'application fourni via le Web, construit à l'aide de
+                technologies Web courantes, notamment HTML, CSS et JavaScript.
               </p>
             </div>
           </div>
         </div>
-        <div className="col-4 mt-5" data-aos="fade-down" data-aos-delay="2400">
+        <div
+          className="col-12 col-md-6 col-lg-4 mt-5"
+          data-aos="fade-down"
+          data-aos-duration="10000"
+        >
           <div class="card  border-0 text-white">
             <img
               src="images/contenstack.svg"
@@ -205,7 +259,7 @@ const Tech = ({ homeLanguage }) => {
             />
             <div class="card-img-overlay tech d-flex align-items-center justify-content-center ">
               <p class="card-text fw-bold w-50  text-center">
-                API-based, headless content management platform. .
+                Plateforme de gestion de contenu sans tête basée sur des API.
               </p>
             </div>
           </div>

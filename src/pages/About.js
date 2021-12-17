@@ -1,41 +1,26 @@
-import React, { useState } from "react";
+import React from "react";
 import Approach from "../component/Approach";
 import Craft from "../component/Craft";
 import Footer from "../component/Footer";
 import Hero2 from "../component/Hero2";
 import Navbar from "../component/Navbar";
 import Why from "../component/Why";
+import Social from "../component/Social";
 
 const About = () => {
-  const [homeLanguage, setHomeLanguage] = useState("");
-  const getLanguage = (language) => {
-    setHomeLanguage(language);
-  };
-
-  let name = "About US";
-
-  if (homeLanguage === "fr") {
-    name = " À propos de nous";
-  } else if (homeLanguage === "ar") {
-    name = "معلومات عنا";
-  }
+  let name = " À propos de nous";
 
   return (
     <>
+      <Navbar></Navbar>
+      <Social></Social>
+      <Hero2 name={name} src="./images/about.svg"></Hero2>
+      <Why></Why>
       <div className="container">
-        <Navbar getLanguage={getLanguage}></Navbar>
+        <Approach></Approach>
       </div>
-      <Hero2
-        homeLanguage={homeLanguage}
-        name={name}
-        src="./images/about.svg"
-      ></Hero2>
-      <Why homeLanguage={homeLanguage}></Why>
-      <div className="container">
-        <Approach homeLanguage={homeLanguage}></Approach>
-      </div>
-      <Craft homeLanguage={homeLanguage}></Craft>
-      <Footer homeLanguage={homeLanguage}></Footer>
+      <Craft></Craft>
+      <Footer></Footer>
     </>
   );
 };

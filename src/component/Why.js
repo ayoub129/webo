@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const Why = ({ homeLanguage }) => {
+const Why = () => {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -10,313 +10,230 @@ const Why = ({ homeLanguage }) => {
 
   return (
     <>
-      {homeLanguage === "en" ? (
-        <section className="container">
-          <div className="row mt-5 align-items-center">
-            <div
-              className="col-lg-6"
-              data-aos="fade-right"
-              data-aos-duration="1500"
-            >
-              <img
-                src="./images/projet1.jpg"
-                alt="about"
-                className="img-fluid"
-              />
-            </div>
-            <div
-              className="col-lg-6 mt-5"
-              data-aos="fade-left"
-              data-aos-duration="1500"
-            >
-              <h2 className="fs-2 fw-bold">WHY WEBO ?</h2>
-              <h4 className="fs-4 my-3">
-                multiple talents, for a unique solution!
-              </h4>
-              <p className="text-muted lh-lg w-75">
-                We support clients from strategic framing to operational
-                deployment, including project management. Our common goal: to
-                transform investments and expectations into operational added
-                value. Our team of engineers are researchers in new
-                technologies, we build your project step by step and we better
-                solutions because quite simply your project is also the image of
-                our company
-              </p>
-            </div>
+      <section className="container">
+        <div className="row mt-8 align-items-center">
+          <div
+            className="col-lg-6"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
+            <img
+              src="./images/services.svg"
+              alt="about"
+              className="img-fluid mt-5"
+            />
           </div>
-          <div className="row mt-5 align-items-center">
-            <div
-              className="col-lg-6 d-lg-none d-block"
-              data-aos="fade-right"
-              data-aos-duration="1500"
-            >
-              <img
-                src="./images/projet4.jpg"
-                alt="about 2"
-                className="img-fluid"
-              />
-            </div>
-            <div
-              className="col-lg-6 mt-5"
-              data-aos="fade-right"
-              data-aos-duration="1500"
-            >
-              <h2 className="fs-2 fw-bold">OUR MISSION</h2>
-              <h4 className="fs-4 my-3">
-                innovate and create value for your projects.
-              </h4>
-              <p className="text-muted lh-lg">
-                WEBO is a company of experts in web architectures and software
-                solutions. Our agency specializes in the design and development
-                of websites, e-commerce platforms, specific software and
-                specific web applications. Thanks to continuous investments in
-                technology watch, WEBO anticipates trends, chooses and controls
-                products as early as possible to provide its customers with
-                efficient and secure web and software solutions.
-              </p>
-            </div>
-            <div
-              className="col-lg-6 d-lg-block d-none"
-              data-aos="fade-left"
-              data-aos-duration="1500"
-            >
-              <img
-                src="./images/projet4.jpg"
-                alt="about 2"
-                className="img-fluid"
-              />
-            </div>
+          <div
+            className="col-lg-6 mt-5"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
+            <h2 className="fs-2 fw-bold">
+              {" "}
+              NOS SERVICES DE DÉVELOPPEMENT WEB SUR-MESURE
+            </h2>
+            <p className="text-muted lh-lg w-75">
+              Cyber Digital est une entreprise spécialisée dans les services de
+              développement web sur-mesure. Elle se charge de la mise en place
+              de l’ensemble des fonctionnalités techniques de votre projet web,
+              qu’il s’agisse d’une application web, d’une plateforme sur-mesure
+              ou bien d’une solution CRM.En fonction des exigences proposées
+              dans votre cahier des charges, nos experts web analyseront avec
+              précision vos besoins, tout en vous proposant les solutions
+              techniques les plus adaptées à votre projet avec un respect des
+              deadlines prévues. Par la suite, ils prendront en charge le
+              développement des spécifications opérationnelles à travers une
+              rédaction des lignes de code.
+            </p>
           </div>
-          <div className="row my-5 align-items-center">
-            <div
-              className="col-lg-6"
-              data-aos="fade-right"
-              data-aos-duration="1500"
-            >
-              <img src="./images/computer.jpg" alt="" className="img-fluid" />
-            </div>
-            <div
-              className="col-lg-6 mt-5"
-              data-aos="fade-left"
-              data-aos-duration="1500"
-            >
-              <h2 className="fs-2 fw-bold">WHAT DO YOU GET?</h2>
-              <h4 className="fs-4 my-3">Let’s meet your challenges.</h4>
-              <p className="text-muted lh-lg">
-                Increase in traffic on your e-commerce platform, increase the
-                loyalty of your audiences with adapted content, develop the
-                efficiency of collaborative spaces, optimize knowledge sharing,
-                increase the turnover generated on the web, strengthen your
-                digital identity on all support, facilitation of the management
-                of your activities using relevant KPIs, successful deployment of
-                a new tool, etc.
-              </p>
-            </div>
+        </div>
+        <div className="row mt-8 align-items-center">
+          <div
+            className="col-lg-6 d-lg-none d-block"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
+            <img
+              src="./images/mission.svg"
+              alt="about 2"
+              className="img-fluid"
+            />
           </div>
-        </section>
-      ) : homeLanguage === "fr" ? (
-        <section className="container">
-          <div className="row mt-5 align-items-center">
-            <div
-              className="col-lg-6"
-              data-aos="fade-right"
-              data-aos-duration="1500"
-            >
-              <img
-                src="./images/projet1.jpg"
-                alt="about"
-                className="img-fluid"
-              />
-            </div>
-            <div
-              className="col-lg-6 mt-5"
-              data-aos="fade-left"
-              data-aos-duration="1500"
-            >
-              <h2 className="fs-2 fw-bold">POURQUOI WEBO ?</h2>
-              <h4 className="fs-4 my-3">
-                de multiples talents, pour une solution unique !
-              </h4>
-              <p className="text-muted lh-lg w-75">
-                Nous accompagnons nos clients du cadrage stratégique à
-                l'opérationnel déploiement, y compris la gestion de projet.
-                Notre objectif commun : transformer les investissements et les
-                attentes en ajouts opérationnels valeur. Notre équipe
-                d'ingénieurs sont des chercheurs en nouvelles technologies, nous
-                construisons votre projet étape par étape et nous solutions car
-                tout simplement votre projet est aussi l'image de notre
-                compagnie
-              </p>
-            </div>
+          <div
+            className="col-lg-6 mt-5"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
+            <h2 className="fs-2 fw-bold">Nos MISSION</h2>
+            <p className="text-muted lh-lg">
+              La mission de notre équipe inclue également les services de
+              refonte web, elle est capable de réaliser un diagnostic complet
+              d’une plateforme en ligne, tout en détectant les facteurs
+              bloquants et proposant les axes d’amélioration à aborder pour
+              éliminer les bugs existants.La polyvalence, la réactivité, la
+              capacité d’adaptation et le respect des délais sont les qualités
+              qui distinguent notre entreprise parmi plusieurs d’autres sur le
+              marché.Il vous suffit de partager avec nous vos idées et nous
+              transformons tous vos projets web en réalité.
+            </p>
           </div>
-          <div className="row mt-5 align-items-center">
-            <div
-              className="col-lg-6 d-lg-none d-block"
-              data-aos="fade-right"
-              data-aos-duration="1500"
-            >
-              <img
-                src="./images/projet4.jpg"
-                alt="about 2"
-                className="img-fluid"
-              />
-            </div>
-            <div
-              className="col-lg-6 mt-5"
-              data-aos="fade-right"
-              data-aos-duration="1500"
-            >
-              <h2 className="fs-2 fw-bold">NOTRE MISSION</h2>
-              <h4 className="fs-4 my-3">
-                innovez et créez de la valeur pour vos projets.
-              </h4>
-              <p className="text-muted lh-lg">
-                WEBO est une société d'experts en architectures web et logiciels
-                solutions. Notre agence est spécialisée dans la conception et le
-                développement de sites Web, de plateformes de commerce
-                électronique, de logiciels spécifiques et applications Web
-                spécifiques. Grâce à des investissements continus dans veille
-                technologique, WEBO anticipe les tendances, choisit et contrôle
-                produits le plus tôt possible pour fournir à ses clients des
-                solutions web et logicielles efficaces et sécurisées.
-              </p>
-            </div>
-            <div
-              className="col-lg-6 d-lg-block d-none"
-              data-aos="fade-left"
-              data-aos-duration="1500"
-            >
-              <img
-                src="./images/projet4.jpg"
-                alt="about 2"
-                className="img-fluid"
-              />
-            </div>
+          <div
+            className="col-lg-6 d-lg-block d-none"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
+            <img
+              src="./images/mission.svg"
+              alt="about 2"
+              className="img-fluid"
+            />
           </div>
-          <div className="row my-5 align-items-center">
-            <div
-              className="col-lg-6"
-              data-aos="fade-right"
-              data-aos-duration="1500"
-            >
-              <img src="./images/computer.jpg" alt="" className="img-fluid" />
-            </div>
-            <div
-              className="col-lg-6 mt-5"
-              data-aos="fade-left"
-              data-aos-duration="1500"
-            >
-              <h2 className="fs-2 fw-bold">QU'EST CE QUE TU OBTIENS?</h2>
-              <h4 className="fs-4 my-3">Relevons vos défis.</h4>
-              <p className="text-muted lh-lg">
-                Augmentation du trafic sur votre plateforme e-commerce,
-                augmentez le fidéliser vos audiences avec des contenus adaptés,
-                développer la efficacité des espaces collaboratifs, optimiser le
-                partage des connaissances, augmenter le chiffre d'affaires
-                généré sur le web, renforcer votre identité numérique sur tous
-                les supports, facilitation de la gestion de vos activités à
-                l'aide de KPI pertinents, déploiement réussi de un nouvel outil,
-                etc.
-              </p>
-            </div>
+        </div>
+        <div className="row mt-8 align-items-center">
+          <div
+            className="col-lg-6"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
+            <img src="./images/history.svg" alt="" className="img-fluid" />
           </div>
-        </section>
-      ) : (
-        <section className="container rtl">
-          <div className="row mt-5 align-items-center">
-            <div
-              className="col-lg-6"
-              data-aos="fade-left"
-              data-aos-duration="1500"
-            >
-              <img
-                src="./images/projet1.jpg"
-                alt="about"
-                className="img-fluid"
-              />
-            </div>
-            <div
-              className="col-lg-6 mt-5"
-              data-aos="fade-right"
-              data-aos-duration="1500"
-            >
-              <h2 className="fs-2 fw-bold"> لماذا ويبو ؟ </h2>
-              <h4 className="fs-4 my-3"> مواهب متعددة لحل فريد !</h4>
-              <p className="text-muted lh-lg w-75 fs-5">
-                نحن ندعم العملاء من الإطار الاستراتيجي إلى النشر التشغيلي ، بما
-                في ذلك إدارة المشروع. هدفنا المشترك: تحويل الاستثمارات والتوقعات
-                إلى عملية مضافة القيمة. لدينا فريق من المهندسين الباحثين في جديد
-                التقنيات ، نحن نبني مشروعك خطوة بخطوة ونحن أفضل الحلول لأن
-                مشروعك ببساطة هو صورة لـشركتنا
-              </p>
-            </div>
+          <div
+            className="col-lg-6 mt-5"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
+            <h2 className="fs-2 fw-bold">NOTRE HISTOIRE</h2>
+            <p className="text-muted lh-lg">
+              Cyber Digital est au Maroc, basée à Tanger, et fait du WEB
+              hyperactivement. Nous avons une approche intégrale. Vous cueillez
+              les fleurs, on décortique les pétales et vous léchez le nectar. Et
+              croyez-nous, l’association de ces termes ne se réduit pas à un
+              mauvais jeu de mots. Notre passion est le leitmotiv de notre
+              métier. Et nous sommes là pour donner l’importance que votre
+              projet mérite. Nous l’étudions, l’analysons et vous préparons la
+              meilleure solution. Il a été dit que nous nous démarquions par le
+              vaste éventail de services que nous offrons et par notre rapide
+              réactivité, soit concernant vos problèmes techniques ou la
+              réalisation immédiate de vos projets. 99,9 % de nos succès sont le
+              résultat d’efforts soutenus, d’idées directes ou détournées,
+              d’humour, d’analyse fine et d’audace pure.Nous n’essayons pas de
+              plaire à tout le monde : seulement à nos clients. Et aux clients
+              de nos clients. Parfois même aux clients des clients de nos
+              clients. Et aux directeurs de banque de toutes ces personnes, car
+              nous croyons à la redistribution des richesses. Nous sommes
+              plusieurs à bouger beaucoup et nous sommes assez sages pour tirer
+              profit de votre expérience.
+            </p>
           </div>
-          <div className="row mt-5 align-items-center">
-            <div
-              className="col-lg-6 d-lg-none d-block"
-              data-aos="fade-left"
-              data-aos-duration="1500"
-            >
-              <img
-                src="./images/projet4.jpg"
-                alt="about 2"
-                className="img-fluid"
-              />
-            </div>
-            <div
-              className="col-lg-6 mt-5"
-              data-aos="fade-left"
-              data-aos-duration="1500"
-            >
-              <h2 className="fs-2 fw-bold">مهمتنا</h2>
-              <h4 className="fs-4 my-3">ابتكر واخلق قيمة لمشاريعك.</h4>
-              <p className="text-muted lh-lg fs-5">
-                ويبو هي شركة خبراء في معماريات الويب والبرمجيات . وكالتنا متخصصة
-                في تصميم و تطوير مواقع الويب ومنصات التجارة الإلكترونية وبرامج
-                محددة و تطبيقات ويب محددة. بفضل الاستثمارات المستمرة في
-                التكنولوجيا ، ويبو تتوقع الاتجاهات والاختيارات والضوابط في أقرب
-                وقت ممكن لتزويد عملائها بها مع حلول ويب وبرامج فعالة وآمنة.
-              </p>
-            </div>
-            <div
-              className="col-lg-6 d-lg-block d-none"
-              data-aos="fade-right"
-              data-aos-duration="1500"
-            >
-              <img
-                src="./images/projet4.jpg"
-                alt="about 2"
-                className="img-fluid"
-              />
-            </div>
+        </div>
+        <div className="row mt-8 align-items-center">
+          <div
+            className="col-lg-6 d-lg-none d-block"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
+            <img src="./images/why.svg" alt="about 2" className="img-fluid" />
           </div>
-          <div className="row my-5 align-items-center">
-            <div
-              className="col-lg-6"
-              data-aos="fade-left"
-              data-aos-duration="1500"
-            >
-              <img src="./images/computer.jpg" alt="" className="img-fluid" />
-            </div>
-            <div
-              className="col-lg-6 mt-5"
-              data-aos="fade-right"
-              data-aos-duration="1500"
-            >
-              <h2 className="fs-2 fw-bold">على ماذا تحصل ؟</h2>
-              <h4 className="fs-4 my-3">دعونا نواجه التحديات الخاصة بك.</h4>
-              <p className="text-muted lh-lg fs-5">
-                زيادة حركة المرور على منصة التجارة الإلكترونية الخاصة بك ،
-                وزيادة ولاء جمهورك بالمحتوى الملائم ، قم بتطوير كفاءة المساحات
-                التعاونية ، وتحسين مشاركة المعرفة ، زيادة حجم التداول المتولد
-                على الويب ، وتعزيز الهوية الرقمية الخاصة بك وتسهيل ادارة أنشطتك
-                باستخدام مؤشرات الأداء الرئيسية ذات الصلة ، والنشر الناجح لأداة
-                جديدة ، إلخ.
-              </p>
-            </div>
+          <div
+            className="col-lg-6 mt-5"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
+            <h2 className="fs-2 fw-bold">POURQUOI CHOISIR L'AGENCE WEBO</h2>
+            <ol className="text-muted lh-lg">
+              <li>Les sites Web que nous créons sont optimisés</li>
+              <li>
+                Notre méthodologie Agile de développement est prouvée et
+                efficace
+              </li>
+              <li> Un accent particulier sur les besoins métier et le ROI</li>
+              <li> Aucun compromis sur la qualité du site</li>
+              <li> Nous répondons rapidement aux besoins des clients</li>
+              <li>
+                La prestation des services et des solutions peut se faire à
+                votre entreprise
+              </li>
+              <li>
+                Pas de soucis car nous avons une équipe de développement web
+                experte
+              </li>
+              <li> Nos développeurs Web sont expérimentés et certifiés</li>
+              <li> Nous créons des sites Web réactifs et dynamiques</li>
+              <li> Une vaste expérience en gestion de projet</li>
+            </ol>
           </div>
-        </section>
-      )}
+          <div
+            className="col-lg-6 d-lg-block d-none"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
+            <img src="./images/why.svg" alt="about 2" className="img-fluid" />
+          </div>
+        </div>
+        <div className="row mt-8 align-items-center">
+          <div
+            className="col-lg-6"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
+            <img src="./images/value.svg" alt="" className="img-fluid" />
+          </div>
+          <div
+            className="col-lg-6 mt-5"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
+            <h2 className="fs-2 fw-bold">NOS VALEURS</h2>
+            <p className="text-muted lh-lg">
+              <span className="fw-bold">POURQUOI SOMMES-NOUS DIFFÉRENTS ?</span>{" "}
+              <br />
+              Nous sommes passionnés par notre métier et nous travaillons sans
+              compter avec beaucoup d’enthousiasme. Nous prenons du plaisir à
+              réaliser des projets fiables, rentables et enrichissants. Notre
+              prestation est complète et nous sommes remerciés pour la qualité
+              de notre service.Notre relation avec nos clients est basée sur une
+              transparence absolue et un grand respect. Nous étudions avant tout
+              vos besoins et nous nous adaptons pour les réaliser en vous
+              assurant un retour sur investissement et une visibilité unique et
+              haut de gamme.
+            </p>
+          </div>
+        </div>
+        <div className="row mt-8 align-items-center">
+          <div
+            className="col-lg-6 d-lg-none d-block"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
+            <img src="./images/plus.svg" alt="about 2" className="img-fluid" />
+          </div>
+          <div
+            className="col-lg-6 mt-5"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
+            <h2 className="fs-2 fw-bold">NOS PLUS</h2>
+            <p className="text-muted lh-lg">
+              <span className="fw-bold">GARANTIE, SUIVI ET ACCOMPAGNEMENT</span>{" "}
+              <br />
+              Toutes nos réalisations web sont accompagnées d’une formation
+              permettant la prise en main du site via son interface
+              d’administration (back-office). Nous surveillons le projet et
+              assurons les mises à jour si nécessaire. Nous intervenons en moins
+              de 48 heures pour réparer tout bug ou tout dysfonctionnement.Vous
+              aurez également accès à une interface de support permettant la
+              gestion de vos demandes en priorité.
+            </p>
+          </div>
+          <div
+            className="col-lg-6 d-lg-block d-none"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
+            <img src="./images/plus.svg" alt="about 2" className="img-fluid" />
+          </div>
+        </div>
+      </section>
     </>
   );
 };

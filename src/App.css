@@ -27,8 +27,8 @@ a {
   margin: 0 auto !important;
 }
 
-.rtl {
-  direction: rtl;
+nav {
+  padding: 0 !important;
 }
 
 .navbar-nav {
@@ -62,7 +62,7 @@ a {
 }
 
 .text-hv:hover {
-  color: var(--violet-color) !important;
+  color: var(--btn-color) !important;
   transition: 0.5s;
 }
 
@@ -468,7 +468,7 @@ a.text-violet:hover {
 
 @media (min-width: 1200px) {
   .fs-big {
-    font-size: 5.5rem !important;
+    font-size: 4rem !important;
   }
 
   .w-lg-75 {
@@ -526,6 +526,16 @@ a.text-violet:hover {
     margin-top: 2em;
     width: 25% !important;
   }
+
+  .d-none-sm {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .d-none-sm {
+    display: none;
+  }
 }
 
 .h-200 {
@@ -575,4 +585,23 @@ a.text-violet:hover {
   text-align: start;
   margin-left: 3em;
   margin-top: 2em;
+}
+
+.w-35 {
+  height: 70px;
+}
+
+.bg-gray {
+  background-color: rgba(165, 165, 165, 0.85);
+}
+
+.mt-8 {
+  margin-top: 8em;
+}
+
+.left-fixed {
+  position: fixed;
+  top: 35%;
+  left: 0.5em;
+  z-index: 5;
 }

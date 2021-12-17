@@ -3,7 +3,7 @@ import Isotope from "isotope-layout";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
 
-const ProjectsFilter = ({ homeLanguage }) => {
+const ProjectsFilter = () => {
   // init one ref to store the future isotope object
   const isotope = React.useRef();
   // store the filter keyword in a state
@@ -49,35 +49,31 @@ const ProjectsFilter = ({ homeLanguage }) => {
               className={filterKey === "*" ? "filter-active" : ""}
               onClick={handleFilterKeyChange("*")}
             >
-              {homeLanguage === "en"
-                ? "Show All"
-                : homeLanguage === "fr"
-                ? "Afficher tout"
-                : "عرض الكل"}
+              Afficher tout
             </li>
             <li
               className={filterKey === "react" ? "filter-active" : ""}
               onClick={handleFilterKeyChange("react")}
             >
-              Show react apps
+              Afficher react Apps
             </li>
             <li
               className={filterKey === "php" ? "filter-active" : ""}
               onClick={handleFilterKeyChange("php")}
             >
-              Show php apps
+              Afficher php Apps
             </li>
             <li
               className={filterKey === "wordpress" ? "filter-active" : ""}
               onClick={handleFilterKeyChange("wordpress")}
             >
-              Show wordpress apps
+              Afficher wordpress Apps
             </li>
             <li
               className={filterKey === "node" ? "filter-active" : ""}
               onClick={handleFilterKeyChange("node")}
             >
-              Show Node.js apps
+              Afficher Node.js Apps
             </li>
           </ul>
         </div>
@@ -88,7 +84,7 @@ const ProjectsFilter = ({ homeLanguage }) => {
           <div className="portfolio-wrap">
             <img src={project[0]} className="img-fluid h-300" alt="" />
             <div className="portfolio-info">
-              <h4>Stock Management App</h4>
+              <h4>Application de gestion des stocks</h4>
               <p>React - PHP</p>
               <div className="portfolio-links">
                 {isOpen && (
@@ -168,7 +164,7 @@ const ProjectsFilter = ({ homeLanguage }) => {
           <div className="portfolio-wrap">
             <img src={project[2]} className="img-fluid h-300" alt="" />
             <div className="portfolio-info">
-              <h4>Task Management App</h4>
+              <h4>Application de gestion des tâches</h4>
               <p>react - Node.js</p>
               <div className="portfolio-links">
                 {isOpen && (
@@ -248,7 +244,7 @@ const ProjectsFilter = ({ homeLanguage }) => {
           <div className="portfolio-wrap">
             <img src={project[4]} className="img-fluid h-300" alt="" />
             <div className="portfolio-info">
-              <h4>Store Woocomerce</h4>
+              <h4>Magasin Woocommerce</h4>
               <p>Wordpress - php </p>
               <div className="portfolio-links">
                 {isOpen && (
@@ -288,7 +284,7 @@ const ProjectsFilter = ({ homeLanguage }) => {
           <div className="portfolio-wrap">
             <img src={project[5]} className="img-fluid h-300" alt="" />
             <div className="portfolio-info">
-              <h4>E-commerce Store</h4>
+              <h4>Boutique de commerce électronique</h4>
               <p>React - Node.js</p>
               <div className="portfolio-links">
                 {isOpen && (
