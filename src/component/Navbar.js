@@ -2,9 +2,20 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+
+  window.addEventListener('scroll' , () => {
+    let menu = document.getElementById('navbar')
+
+    if (window.pageYOffset > 0) {
+      menu.classList.add('bg')
+    } else {
+      menu.classList.remove('bg')
+    }
+  })
+
   return (
     <>
-      <nav className="navbar navbar-expand-lg fixed-top navbar-light bg-gray">
+      <nav className="navbar navbar-expand-lg fixed-top navbar-light transition" id="navbar">
         <div className="container">
           <Link className="navbar-brand me-auto ms-2" to="/">
             <img src="images/logo.png" className="img-fluid w-35" alt="logo" />

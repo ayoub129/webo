@@ -591,8 +591,12 @@ a.text-violet:hover {
   height: 70px;
 }
 
-.bg-gray {
-  background-color: rgba(165, 165, 165, 0.85);
+.bg {
+  background-color: var(--violet-color);
+}
+
+.transition {
+  transition: 1s;
 }
 
 .mt-8 {

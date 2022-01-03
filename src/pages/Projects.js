@@ -10,7 +10,6 @@ const Home = () => {
   let name = "Projets";
   return (
     <>
-      <div className="circle-violet rounded-circle d-lg-block d-none"></div>
       <Navbar></Navbar>
       <Social></Social>
       <Hero2 name={name} src="./images/projects.svg"></Hero2>
