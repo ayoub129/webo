@@ -31,10 +31,9 @@ const About = ({ homeLanguage }) => {
           >
             <h3 className="fw-bold">About</h3>
             <p className="text-muted word-space lh-lg w-lg-75 w-100">
-              We provide web solutions (e-commerce, Landing-Pages, Portfolio,
-              Blogging , Wordpress , CMS website, e-tourism, specific web
-              application, public or private sector administrative management
-              system, Social Media Marketing , etc.)
+              Cyber Digital est une entreprise spécialisée dans les services de développement web sur-mesure. Elle se charge de la mise en place de l’ensemble des fonctionnalités techniques de votre projet web, qu’il s’agisse d’une application web, d’une plateforme sur-mesure ou bien d’une solution CRM.En fonction des exigences proposées dans votre cahier des charges, nos experts web analyseront avec précision vos besoins, tout en vous proposant les solutions techniques les plus adaptées à votre projet avec un respect des deadlines prévues. Par la suite, ils prendront en charge le développement des spécifications opérationnelles à travers une rédaction des lignes de code.
+
+
             </p>
             <Link to="/about" className="text-violet text-hv">
               Know More <i className="ms-1 mt-1 fas fa-arrow-right"></i>
